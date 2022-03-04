@@ -20,7 +20,7 @@ const MinterContextProvider: FunctionComponent<MinterContextProvider> = ({ child
     let src =
       config.network === 'ethereum'
         ? 'https://minter.mantial.com'
-        : 'https://dev.minter.mantial.com/';
+        : 'https://dev.minter.mantial.com';
     src += `/${config.collectionSlug}?`;
     const params = new URLSearchParams();
     if (config.amount) params.append('amount', config.amount.toString());
