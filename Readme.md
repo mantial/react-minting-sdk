@@ -1,45 +1,68 @@
-# react-scroll-up-btn
+# mantial-react-components
 
-
-
-Source code at https://github.com/weianofsteel/react-scroll-up-button
+Source code at https://github.com/rather-labs/mantial-react-components
 
 ## Installation
 
-    npm install --save react-scroll-up-btn
+    npm install @mantial/react-components
 
-or
+## npm Build
 
-    yarn add react-scroll-up-btn
+    npm run rollup
+
+## Testing library locally
+
+First, generate the mantial-react-components-version.tgz file with:
+
+    npm pack
+
+Move .tgz to the target project
+
+    npm install mantial-react-components-version.tgz
 
 ## Usage
 
-``` 
-import React from 'react';
-import ScrollUpButton from 'react-scroll-up-btn';
+The MinterContextProvider must enclose the Mantial components used. For example:
 
-function Demo(){
+```
+import React from 'react';
+import {MinterContextProvider} from '@mantial/react-components';
+
+const customMantialConfig = {
+    //your custom mantial config
+}
+
+function App(){
     return(
-        <React.Fragment>
-            <div>
-                <ScrollUpButton 
-                    behavior={'smooth'}
-                    IconSize={'5rem'}
-                    appearCoordinate={1200}
-                />    
-            </div> 
-        </React.Fragment>
+        <MinterContextProvider config={{...customMantialConfig}}>
+            <Router />  //the rest of your app...
+        </MinterContextProvider>
     )
 }
 
-export default Demo;
+export default App;
+```
+
+Then, you are able to use our components somewhere. For example:
+
+```
+import React from 'react';
+import {Minter} from '@mantial/react-components';
+
+function Form(){
+    return(
+        <div>
+            <h2>Mint your NFT</h2>
+            <Minter />
+        </div>
+    )
+}
+
+export default App;
 ```
 
 ## Props
 
-|        Name        |        Type       |  Default  | 
-|--------------------|-------------------|-----------|
-|      behavior      |      'smooth'     |   'auto'  |  
-|      IconSize      |  '?px' or '?rem'  |   '60px'  |           
-|  appearCoordinate  |  number(scrollY)  |    1200   |                
-
+| Name | Type | Default |
+| ---- | ---- | ------- |
+|      |      |         |
