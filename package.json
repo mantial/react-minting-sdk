@@ -1,6 +1,9 @@
 {
-  "name": "@mantial/react-components",
-  "version": "1.0.9",
+  "name": "@rather-labs/mantial-react-components",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/rather-labs"
+  },
+  "version": "1.0.13",
   "description": "Mantial react components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -17,9 +20,9 @@
     "build": "webpack",
     "rollup": "rollup -c"
   },
-  "author": "Weian Wang",
+  "author": "Mantial",
   "bugs": {
-    "url": "https://github.com/weianofsteel/react-scroll-up-button"
+    "url": "https://github.com/rather-labs/mantial-react-components"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",

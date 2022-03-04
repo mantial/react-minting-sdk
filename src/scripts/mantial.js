@@ -1,14 +1,16 @@
 export function initMantialConfig(frameId, config) {
   const frame = document.getElementById(frameId);
-  frame.onload = () => {
-    frame.contentWindow.postMessage(
-      {
-        ...config,
-        type: 'mantial-config',
-      },
-      '*'
-    );
-  };
+  if (frame) {
+    frame.onload = () => {
+      frame.contentWindow.postMessage(
+        {
+          ...config,
+          type: 'mantial-config',
+        },
+        '*'
+      );
+    };
+  }
 }
 
 export function makeid(length) {

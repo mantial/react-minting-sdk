@@ -23,6 +23,7 @@ export default [
         // inlineDynamicImports: true,
       },
     ],
+    external: ['react', 'react-dom'],
     plugins: [resolve(), commonjs(), typescript({ tsconfig: './tsconfig.json' }), json()],
   },
   {
