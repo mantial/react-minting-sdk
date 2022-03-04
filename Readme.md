@@ -4,9 +4,9 @@ Source code at https://github.com/rather-labs/mantial-react-components
 
 ## Installation
 
-    npm install @mantial/react-components
+    npm install @rather-labs/mantial-react-components
 
-## npm Build
+## Build
 
     npm run rollup
 
@@ -61,8 +61,43 @@ function Form(){
 export default App;
 ```
 
-## Props
+## Mantial configuration
 
-| Name | Type | Default |
-| ---- | ---- | ------- |
-|      |      |         |
+    {
+        network: 'ropsten' | 'ethereum';
+        collectionSlug: string;
+        amount?: number;
+        showTitle?: boolean;
+        amountSelector?: boolean;
+        saleSelector?: boolean;
+        saleId?: number;
+        showDetails?: boolean;
+        showErrors?: boolean;
+        theme?: any; // ---> MUI v5 theme
+        styles?: { // ---> allow inline styles applied as 'sx' to MUI components
+            button?: any;
+            mintButton?: any;
+            switchNetworkButton?: any;
+            container?: any;
+            title?: any;
+            error?: any;
+            amount?: any;
+            iconButton?: any;
+            texts?: any;
+            success?: any;
+            minting?: any;
+            minterContainer?: any;
+            description?: any;
+            installMetamaskButton?: any;
+        };
+        texts?: {
+            title?: string;
+            minting?: string;
+            success?: string;
+            buy?: string;
+            goBack?: string;
+            description?: string;
+            switchNetwork?: string;
+            installMetamask?: string;
+        };
+    };
