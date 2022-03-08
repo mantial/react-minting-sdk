@@ -3,7 +3,7 @@ import { MinterContext } from '../../context/MinterContextProvider/MinterContext
 
 type MinterProps = {
   width?: number | string;
-  heigth?: number | string;
+  height?: number | string;
 };
 
 const Minter: FunctionComponent<MinterProps> = (config) => {
@@ -12,7 +12,7 @@ const Minter: FunctionComponent<MinterProps> = (config) => {
   if (!url) return <p>Loading...</p>;
 
   return (
-    <iframe id={iframeId} width={config.width || '100%'} height={config.heigth || 500} src={url} />
+    <iframe id={iframeId} width={config.width || '100%'} height={config.height || 500} src={url} />
   );
 };
 

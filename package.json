@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/rather-labs"
   },
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Mantial react components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
