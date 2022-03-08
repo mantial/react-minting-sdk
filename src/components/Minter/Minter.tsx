@@ -2,8 +2,8 @@ import React, { FunctionComponent, useContext } from 'react';
 import { MinterContext } from '../../context/MinterContextProvider/MinterContextProvider';
 
 type MinterProps = {
-  width: number | string;
-  heigth: number | string;
+  width?: number | string;
+  heigth?: number | string;
 };
 
 const Minter: FunctionComponent<MinterProps> = (config) => {
