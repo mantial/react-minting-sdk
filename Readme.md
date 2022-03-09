@@ -1,10 +1,10 @@
-# mantial-react-components
+# @mantial/react-minting-sdk
 
-Source code at https://github.com/rather-labs/mantial-react-components
+Source code at https://github.com/mantial/react-minting-sdk
 
 ## Installation
 
-    npm install @rather-labs/mantial-react-components
+    npm install @mantial/react-minting-sdk
 
 ## Build
 
@@ -12,13 +12,13 @@ Source code at https://github.com/rather-labs/mantial-react-components
 
 ## Testing library locally
 
-First, generate the mantial-react-components-version.tgz file with:
+First, generate the react-minting-sdk-version.tgz file with:
 
     npm pack
 
 Move .tgz to the target project
 
-    npm install mantial-react-components-version.tgz
+    npm install react-minting-sdk-version.tgz
 
 ## Usage
 
@@ -26,7 +26,7 @@ The MinterContextProvider must enclose the Mantial components used. For example:
 
 ```
 import React from 'react';
-import {MinterContextProvider} from '@mantial/react-components';
+import {MinterContextProvider} from '@mantial/react-minting-sdk';
 
 const customMantialConfig = {
     //your custom mantial config
@@ -47,7 +47,7 @@ Then, you are able to use our components somewhere. For example:
 
 ```
 import React from 'react';
-import {Minter} from '@mantial/react-components';
+import {Minter} from '@mantial/react-minting-sdk';
 
 function Form(){
     return(

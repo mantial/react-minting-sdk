@@ -1,10 +1,6 @@
 {
   "name": "@mantial/react-minting-sdk",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/@mantial"
-  },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mantial - Minting SDK",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
