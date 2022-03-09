@@ -1,10 +1,11 @@
 {
-  "name": "@rather-labs/mantial-react-components",
+  "name": "@mantial/react-minting-sdk",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/rather-labs"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/@mantial"
   },
-  "version": "1.0.15",
-  "description": "Mantial react components",
+  "version": "1.0.0",
+  "description": "Mantial - Minting SDK",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -22,7 +23,11 @@
   },
   "author": "Mantial",
   "bugs": {
-    "url": "https://github.com/rather-labs/mantial-react-components"
+    "url": "https://github.com/mantial/react-minting-sdk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mantial/react-minting-sdk.git"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
